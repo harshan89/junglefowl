@@ -1,4 +1,5 @@
 import React from 'react';
+import Center from '../Center/Center';
 import Button from './Button';
 
 interface Args {
@@ -10,7 +11,8 @@ interface Args {
 
 export default {
     title: 'Form/Button',
-    component: Button
+    component: Button,
+    // decorators: [(story: any) => <Center>{story()}</Center>]
 }
 
 const Template = (args: Args) => <Button {...args} />
