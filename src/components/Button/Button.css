@@ -8,11 +8,13 @@
     font-size: 15px;
     border-radius: 4px;
     cursor: pointer;
+    color: #555;
 }
 
 /*color variants*/
 .primary {
-    background-color: #61dafb;
+    background-color: #1ea7fd;
+    color: #FFF;
 }
 
 .secondary {
@@ -22,10 +24,12 @@
 
 .success {
     background-color: #66bf3c;
+    color: #FFF;
 }
 
 .danger {
     background-color: red;
+    color: #FFF;
 }
 
 /*size variants*/

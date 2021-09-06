@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import './Button.css';
 
-interface Props {
+interface Props extends HTMLAttributes<HTMLButtonElement> {
     variant?: String,
     children: React.ReactNode,
     handleClick?: (e: React.MouseEvent<HTMLButtonElement>) => void,
