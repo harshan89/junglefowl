@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react';
-import './Button.css';
+import './Button.scss';
 
 interface Props extends HTMLAttributes<HTMLButtonElement> {
     variant?: String,
@@ -8,8 +8,8 @@ interface Props extends HTMLAttributes<HTMLButtonElement> {
     size?: String
 }
 
-const Button: React.FC<Props> = ({variant, children, handleClick, size}) => {
-    return(
+const Button: React.FC<Props> = ({ variant, children, handleClick, size }) => {
+    return (
         <button
             className={`button ${variant} ${size}`}
             onClick={handleClick}>

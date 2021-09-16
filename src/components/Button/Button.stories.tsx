@@ -1,13 +1,7 @@
 import React from 'react';
 import {Meta, Story} from '@storybook/react';
 import Button from './Button';
-
-interface Args {
-    variant: 'primary' | 'secondary' | 'success' | 'danger',
-    children: React.ReactNode,
-    handleClick?: (e: React.MouseEvent<HTMLButtonElement>) => void,
-    size: 'xs' | 'sm' | 'md' | 'l'| 'xl'
-}
+import { Props } from './types';
 
 const meta: Meta = {
     title: 'Form/Button',
@@ -16,30 +10,30 @@ const meta: Meta = {
 }
 export default meta;
 
-const Template: Story<Args> = (args) => <Button {...args} />
+const Template: Story<Props> = (args) => <Button {...args} />
 
-export const Default: any = Template.bind({});
+export const Default: Story<Props> = Template.bind({});
 Default.args = {
-    variant: 'default',
+    variant: "default",
     children: 'Button',
-    size: 'Button default sm'
+    size: 'sm'
 }
 
-export const Primary: any = Template.bind({});
+export const Primary: Story<Props> = Template.bind({});
 Primary.args = {
     variant: 'primary',
     children: 'Button primary md',
     size: 'md'
 }
 
-export const Success: any = Template.bind({});
+export const Success: Story<Props> = Template.bind({});
 Success.args = {
     variant: 'success',
     children: 'Button success l',
     size: 'l'
 }
 
-export const Danger: any = Template.bind({});
+export const Danger: Story<Props> = Template.bind({});
 Danger.args = {
     variant: 'danger',
     children: 'Button danger xl',
