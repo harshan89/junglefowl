@@ -1,0 +1,28 @@
+@import "../../styles/colors.scss";
+
+.main {
+  display: flex;
+  font-family: sans-serif;
+
+  .header {
+    font-size: 22px;
+    font-weight: bold;
+    border: 1px solid $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+  }
+
+  .cell {
+    padding: 1px;
+    border: 1px solid $primary-color;
+    padding: 3px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+  }
+}
