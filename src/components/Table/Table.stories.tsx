@@ -1,19 +1,7 @@
 import React from 'react';
 import {Meta, Story} from '@storybook/react';
 import Table from './Table';
-
-interface Props {
-    rows: Array<string[]>,
-    headers: string[],
-    borderWidth: 'medium',
-    cellPadding: 'medium',
-    cellTextColor: 'black',
-    headerTextColor: 'white',
-    cellBorderColor: '#747381',
-    headerBorderColor: '#494866',
-    backgroundColor: '#a6a5b8',
-    headerBackgroundColor: '#65647a'
-}
+import { Props } from './types';
 
 const meta: Meta = {
   title: 'Table Component',

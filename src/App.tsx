@@ -1,15 +1,38 @@
 import React from 'react';
 import Button from './components/Button/Button'
+import LoginForm from './components/Login/LoginForm'
+import { Props } from './components/Login/types';
 
 function App() {
 
-    const handleMouseEvent = (e: React.MouseEvent<HTMLButtonElement>) => {
-        
-    };
+  const onUsernameChange = (username: string) => {
+
+  }
+
+  const onPasswordChange = (password: string) => {
+
+  }
+
+  const onRememberChange = (value: boolean) => {
+
+  }
+
+  const onSubmit = (username: string, password: string) => {
+    console.log('username ', username);
+    console.log('password ', password);
+  }
+
+  const props: Props = {
+    shouldRemember: true,
+    onUsernameChange,
+    onPasswordChange,
+    onRememberChange,
+    onSubmit
+  }
 
   return (
     <div className="App">
-      <h1>Design system for react</h1>
+      <LoginForm {...props} />
     </div>
   );
 }
