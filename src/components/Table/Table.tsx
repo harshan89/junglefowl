@@ -1,18 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from './Table.module.scss';
+import { Props } from './types';
 
-interface Props {
-    rows: Array<string[]>,
-    headers: [],
-    borderWidth: 'medium',
-    cellPadding: 'medium',
-    cellTextColor: 'black',
-    headerTextColor: 'white',
-    cellBorderColor: '#747381',
-    headerBorderColor: '#494866',
-    backgroundColor: '#a6a5b8',
-    headerBackgroundColor: '#65647a'
-}
 
 const Table: React.FC<Props> = ({ rows, headers, borderWidth, cellPadding, cellTextColor, headerTextColor, cellBorderColor, headerBorderColor, backgroundColor, headerBackgroundColor }) => {
 
